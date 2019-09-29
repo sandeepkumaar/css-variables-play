@@ -1,0 +1,26 @@
+/*@import "./reset.css";*/
+
+
+/*
+ * when defined in the container, it means the children are flexed
+ * how are they flexed depends on the parent and preceding classes 
+ * which simple defines the variable values
+ */
+.flex {
+  display: flex;
+  flex-direction: var(--direction, initial);
+  flex-wrap: nowrap;
+  justify-content: var(--justify, initial);
+}
+
+/* for simple flexing.  utilities */
+.flex-col { --direction: column }
+
+/* align */
+.space-around { --justify: space-around } 
+.space-between { --justify: space-between } 
+.flex-end { --justify: flex-end } 
+.flex-center { --justify: center } 
+
+
+
